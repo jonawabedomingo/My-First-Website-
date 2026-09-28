@@ -23,11 +23,21 @@ form{display:grid;gap:9px}label{font-weight:700;margin-top:8px}input,textarea{wi
 footer{padding:28px;text-align:center;background:var(--brown);color:#fff;font-family:Arial,sans-serif}
 @media(max-width:800px){.navbar{flex-direction:column;gap:12px}.nav-links{gap:14px;flex-wrap:wrap;justify-content:center}.hero,.contact-grid,.ethics-grid,.cards{grid-template-columns:1fr}.hero{padding:45px 0}
 
-profile-image {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto 20px;
+.photo-wrap {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto 20px;
+    padding: 8px;
+    border: 3px solid var(--brown);
+    border-radius: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
 }
